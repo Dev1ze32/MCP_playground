@@ -263,7 +263,7 @@ if __name__ == "__main__":
         else:
             logger.warning("Failed to load initial configuration")
         
-        mcp.run(transport="http", host="localhost", port=8080)
+        mcp.run(transport="http")
         
     except Exception as e:
         logger.critical(f"Failed to start server: {str(e)}")
